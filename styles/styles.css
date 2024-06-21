@@ -1,0 +1,199 @@
+:root {
+  --cinza-escuro: #10151b;
+  --cinza: #181e25;
+  --cinza-claro: #2b323c;
+  --azul-escuro: #005982;
+  --azul-claro: 00b1d3;
+
+  --azul-borda: #004e69;
+  --preto-borda: #000;
+
+  --branco-fonte: #fff;
+  --azul-fonte: #00a8dd;
+  --cinza-fonte: #a5a5a5;
+}
+
+body {
+  font-family: "Sora";
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--cinza);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.rigth-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--branco-fonte);
+  width: 35px;
+  height: 25px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 25px;
+  height: 20px;
+}
+
+.right-title {
+  text-transform: uppercase;
+  color: var(--branco-fonte);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.right-date {
+  color: var(--azul-fonte);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.right-message {
+  max-width: 78%;
+}
+
+.right-message p {
+  text-align: center;
+  color: var(--branco-fonte);
+  line-height: 1.3;
+  font-size: 0.7rem;
+}
+
+.right-message p span {
+  font-weight: 600;
+}
+
+.right-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  gap: 14px;
+}
+
+.content-right-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.right-icons p {
+  color: var(--branco-fonte);
+  font-size: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.right-icons p span {
+  color: var(--azul-fonte);
+}
+
+.btn-ingresso {
+  margin-top: 0.5rem;
+  width: 80%;
+  height: 1.8rem;
+  border-radius: 6px;
+  background-color: var(--azul-fonte);
+  border: none;
+  border-right: 3px solid var(--azul-borda);
+  border-bottom: 3px solid var(--azul-borda);
+  font-weight: 500;
+  color: var(--branco-fonte);
+  cursor: pointer;
+  padding-left: 20px;
+  background-image: url("../img/icone-butao.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.left {
+  margin-top: 2rem;
+}
+
+.left-content-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.content-card {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-card {
+  width: 320px;
+  height: 180px;
+  border-radius: 4px;
+  background-color: var(--cinza-claro);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.6rem;
+}
+
+.card-title {
+  color: var(--branco-fonte);
+  font-size: var(--tamanho-4);
+  font-weight: 600;
+}
+
+.card-subtitle {
+  color: var(--azul-fonte);
+  font-size: var(--tamanho-3);
+  font-weight: 600;
+}
+
+.card-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content-card-item {
+  max-width: 200px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  background: url("../img/Check.webp") left center no-repeat;
+  background-size: 16px;
+  color: var(--branco-fonte);
+}
