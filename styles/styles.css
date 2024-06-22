@@ -265,3 +265,145 @@ body {
 .step p span {
   text-transform: uppercase;
 }
+
+.content-tutor {
+  background-color: var(--cinza-claro);
+  border-radius: 8px;
+  width: 90%;
+  margin-top: 3rem;
+}
+
+.content-title {
+  color: var(--branco-fonte);
+  text-align: center;
+  font-size: 19px;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  background-color: var(--cinza-escuro);
+  padding: 10px;
+}
+
+.content-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content-profile h4 {
+  color: var(--azul-fonte);
+}
+
+.content-profile p {
+  color: var(--branco-fonte);
+  font-size: 13.3px;
+}
+
+.descrição {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.descrição p {
+  color: var(--branco-fonte);
+  text-align: center;
+  width: 95%;
+  font-size: 13.3px;
+  margin: 1rem 0;
+}
+
+.content-card-list {
+  background-color: var(--cinza-claro);
+  border-radius: 8px;
+  width: 80%;
+  margin-top: 2rem;
+  padding: 20px;
+}
+
+.content-header-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-header-card h3 {
+  color: var(--branco-fonte);
+  font-weight: 500;
+}
+
+.content-list {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.content-list p {
+  color: var(--branco-fonte);
+  font-size: 13.3px;
+}
+
+.content-list p span {
+  color: var(--azul-fonte);
+}
+
+.content-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content-list ul li {
+  position: relative;
+  padding-left: 10px;
+  font-size: 13.3px;
+  color: var(--branco-fonte);
+  white-space: nowrap;
+}
+
+.content-list ul li:before {
+  content: "-";
+  position: absolute;
+  left: 0;
+}
+
+.container-button {
+  background: linear-gradient(to right, #004e69, #00a8dd);
+  margin: 2rem 0;
+  width: 80%;
+  padding: 20px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-button h3 {
+  color: var(--branco-fonte);
+  font-weight: 600;
+  width: 40%;
+  font-size: 16px;
+}
+
+.container-button button {
+  background-color: var(--cinza-escuro); 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 15px;
+  font-size: 13.3px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+}
