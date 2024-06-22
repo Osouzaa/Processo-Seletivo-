@@ -25,7 +25,8 @@ body {
   height: 100vh;
 
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .content {
@@ -149,7 +150,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
 }
 
 .content-card {
@@ -196,4 +196,20 @@ body {
   background: url("../img/Check.webp") left center no-repeat;
   background-size: 16px;
   color: var(--branco-fonte);
+}
+
+.message {
+  width: 100%;
+  height: 200px;
+  background-color: var(--cinza-escuro);
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message p {
+  font-size: 0.5rem;
+  color: var(--cinza-fonte);
+  text-align: center;
 }
