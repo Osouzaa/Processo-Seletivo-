@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 80%;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .right {
