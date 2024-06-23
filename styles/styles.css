@@ -21,7 +21,6 @@ body {
 }
 
 .container {
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -140,6 +139,9 @@ body {
 
 .left {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .left-content-cards {
@@ -158,9 +160,8 @@ body {
 }
 
 .container-card {
-  width: 90%;
+  width: 100%;
   height: 180px;
-  border-radius: 4px;
   background-color: var(--cinza-claro);
   border-radius: 10px;
   padding: 20px;
@@ -339,6 +340,13 @@ body {
   font-weight: 500;
 }
 
+.container-tutor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .content-list {
   margin-top: 14px;
   display: flex;
@@ -418,6 +426,12 @@ body {
   padding: 10px;
 }
 
+.content-list-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer img {
   width: 50px;
   height: 50px;
@@ -427,4 +441,145 @@ body {
 .footer p {
   color: var(--branco-fonte);
   font-size: 13.3px;
+}
+
+.footer-separator {
+  display: none;
+}
+
+@media (min-width: 1110px) {
+  .content {
+    margin-top: 4rem;
+  }
+  .right {
+    display: flex;
+  }
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .right-title {
+    font-size: 39px;
+  }
+
+  .right-date {
+    font-size: 23px;
+    margin-bottom: 14px;
+  }
+  .right-message p {
+    text-align: start;
+    font-size: 23px;
+  }
+
+  .content-right-icons {
+    width: auto;
+    margin: 1rem 0;
+  }
+
+  .content-right-icons p {
+    font-size: 16px;
+    width: 163px;
+  }
+
+  .btn-ingresso {
+    margin-top: 1rem;
+    width: 350px;
+    height: 35px;
+    font-size: 23px;
+    font-weight: 500;
+  }
+  .content {
+    flex-direction: row;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .content-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .left-content-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .container-card {
+    width: 250px;
+  }
+
+  .message p {
+    font-size: 13.3px;
+    max-width: 50%;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 39px;
+    width: 700px;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    height: 200px;
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .step {
+    max-width: 1000px;
+    justify-content: baseline;
+    margin-top: 1rem;
+    width: 80%;
+  }
+
+  .step p {
+    font-size: 13.3px;
+    white-space: initial;
+    width: 230px;
+  }
+
+  .container-tutor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .content-tutor {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-bottom: 2rem;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .footer p {
+    margin-right: 14px;
+  }
+
+  .footer-separator {
+    display: block;
+  }
 }
